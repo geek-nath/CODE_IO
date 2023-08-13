@@ -1,0 +1,56 @@
+/* variables */
+:root {
+  --primary-color: #22C55E;
+  --secondary-color: #25233A;
+  --white-color: #FFFFFF;
+}
+
+.about_us_banner {
+  padding: 5rem 0px;
+}
+
+.story_motive {
+  padding: 7rem 0px;
+}
+
+.team {
+  padding: 7rem 0px;
+}
+
+.profile_img_wrap {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  outline: 2px solid transparent;
+  transition: .3s ease-in;
+  outline-offset: 5px;
+}
+
+.profile_img_wrap:hover {
+  outline-color: var(--primary-color) !important;
+}
+
+.profile_social_btn {
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50% !important;
+}
+
+/* responsive designs */
+@media screen and (max-width: 768px) {
+  .team .col-lg-4 {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .goal {
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+}

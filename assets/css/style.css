@@ -18,6 +18,17 @@ body {
   color: var(--primary-color) !important;
 }
 
+.navbar-toggler {
+  background-color: var(--primary-color) !important;
+  padding: 13px 20px !important;
+  box-shadow: none !important;
+  border-radius: 8px !important;
+}
+
+.bg_success {
+  background-color: var(--primary-color) !important;
+}
+
 .text_dark {
   color: var(--secondary-color) !important;
 }
@@ -314,6 +325,10 @@ footer .container .row .col-lg-4 .form-control {
   border-radius: 8px;
   border-color: #EEEEEE !important;
   padding: 10px;
+}
+
+footer .container .row .col-lg-4 .form-control:focus {
+  border-color: var(--primary-color) !important;
 }
 
 footer .container .row .quick_links:hover {

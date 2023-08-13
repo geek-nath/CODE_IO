@@ -14,6 +14,11 @@ window.onscroll = () => {
   }
 }
 
+scrollTopBtn.onclick = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 // diplay services in browser
 const ourServices = [
   {
@@ -126,13 +131,6 @@ blogPosts.forEach((posts) => {
     </div>
   `;
 });
-
-// update date according to lates date
-const date = new Date();
-const year = date.getFullYear();
-const dateUpdate = document.querySelector('#dateUpdate');
-
-dateUpdate.innerHTML = year;
 
 // reviews slider function
 const reviewsWrap = document.querySelector('.reviews_wrapper');
